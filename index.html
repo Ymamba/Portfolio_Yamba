@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yamba's portfolio</title>
+  <meta name="description" content="Portfolio for world-renowned software engineer Ellie" />
+  <meta name="author" content="Ellie" />
+  <link rel="icon" type="image/png" href="imgs/favicon.png" />
+  <script src="https://kit.fontawesome.com/3c4b2652b6.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <img src="imgs/logo.png" alt="Yamba" class="logo" />
+      <img src="imgs/logo_mobile.png" alt="Yamba" class="logo_mobile" />
+      <a href="#">amba</a>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item active" data-link="#home">Home</li>
+      <li class="navbar__menu__item" data-link="#about">About</li>
+      <li class="navbar__menu__item" data-link="#skills">Skills</li>
+      <li class="navbar__menu__item" data-link="#work">My work</li>
+      <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li> -->
+      <li class="navbar__menu__item" data-link="#contact">Contact</li>
+    </ul>
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="home__container">
+      <img src="imgs/profile.jpg" alt="Yamba's profile photo" class="home__avatar" />
+      <h1 class="home__title">A coder who always <br />ecdysis like a snake
+        <h2 class="home__description">
+          Developers aiming for the full stack
+        </h2>
+        <button class="home__contact">Contact Me</button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section__container">
+    <h1>About me</h1>
+    <p class="hangle">
+      퍼블리셔로 1년 재직하다 프론트엔드 개발자가되고 싶은 </br>
+      신입입니다 열정과 노력을 결과물로 보여드리겠습니다!
+    </p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <h2 class="major__title">HTML</h2>
+        <div class="major__description">
+
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <h2 class="major__title">CSS</h2>
+        <p class="major__description">
+
+        </p>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-js"></i>
+        </div>
+        <h2 class="major__title">javaScript</h2>
+        <p class="major__description">
+
+        </p>
+      </div>
+    </div>
+    <div class="about__jobs">
+      <div class="job">
+        <img src="imgs/jobs/tana.png" alt="Tana" class="job__logo" />
+        <div class="job__description">
+          <p class="job__name hangle">
+            해군포탈 재개발사업 (307개 사이트 리뉴얼) / 위젯생성 및 수정
+          </p>
+          <p class="job__period">From June 2020 to July 2021</p>
+        </div>
+      </div>
+      <div class="job">
+        <img src="imgs/jobs/greenart.png" alt="greenart" class="job__logo" />
+        <div class="job__description">
+          <p class="job__name hangle">
+            UI/UX 반응형 웹 / 팀작업 모바일 앱 디자인 / 일러스트,포토샵/ BI,CI 제작 / 프로토타입 기초데이터 수집 / 집적 제작, 사용성 테스트
+          </p>
+          <p class="job__period">2019 June - Nov until</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p class="hangle">
+        정부 프로젝트의 경험과 새로운 기술을 배우려는 열정, 팀 환경에서 일한 경험이 있습니다. <br />계획과 일정을 짜는 능력, 필요할 때 신속하게 적응하는 능력이 있습니다.
+      </p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>75%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Adobe Photoshop</span></li>
+              <li><span>Adobe Illustrator</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="section">
+    <div class="section__container">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">
+          All <span class="category__count">8</span>
+        </button>
+        <button class="category__btn" data-filter="front-end">
+          Front-end <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="back-end">
+          Back-end <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="mobile">
+          Mobile <span class="category__count">2</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a href="" class="project" target="blank" data-type="front-end">
+          <img src="imgs/projects/youtube.png" alt="Youtube" class="project__img" />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML, CSS</span>
+          </div>
+        </a>
+        <a href="https://github.com/dream-ellie/responsive-nav-bar" class="project" data-type="front-end"
+          target="blank">
+          <img class="project__img" src="imgs/projects/navbar.png" alt="navbar" />
+          <div class="project__description">
+            <h3>Responsive Navbar</h3>
+            <span>HTML, CSS with media query</span>
+          </div>
+        </a>
+        <a href="https://github.com/dream-ellie/responsive-nav-bar" class="project" data-type="front-end"
+          target="blank">
+          <img class="project__img" src="imgs/projects/game.png" alt="navbar" />
+          <div class="project__description">
+            <h3>Shopping mall game</h3>
+            <span>HTML, CSS, JavaScript, Json</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="back-end">
+          <img class="project__img" src="imgs/projects/woolworth2.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="back-end">
+          <img class="project__img" src="imgs/projects/accor.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/woolworth2.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/grain.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/legal.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <!-- <section id="testimonials" class="section">
+    <div class="section__container">
+      <h1>Testimonials</h1>
+      <h3>See what they say about me</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar" />
+          <div class="testimonial__speech-bubble">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              fuga libero nulla eveniet aperiam laborum, quis provident
+              quibusdam officiis reprehenderit, placeat neque perspiciatis vero
+              explicabo tempora, dignissimos accusantium inventore ducimus!
+            </p>
+            <p class="name"><a href="">Ellie</a> / Samsung</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__speech-bubble">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              fuga libero nulla eveniet aperiam laborum, quis provident
+              quibusdam officiis reprehenderit, placeat neque perspiciatis vero
+              explicabo tempora, dignissimos accusantium inventore ducimus!
+            </p>
+            <p class="name"><a href="">Ellie</a> / Samsung</p>
+          </div>
+          <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar" />
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h1 class="contact__title">Let's talk</h1>
+    <h2 class="contact__email">dudgh5002@naver.com</h2>
+    <div class="contact__links">
+      <a href="https://github.com/Ymamba" target="_blank">
+        <svg version="1.1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+          style="enable-background:new 0 0 48 48;" xml:space="preserve">
+          <path class="svg__wrap" d="M42.9,0H5.1C2.3,0,0,2.3,0,5.1v37.7C0,45.7,2.3,48,5.1,48h37.7c2.8,0,5.1-2.3,5.1-5.1V5.1C48,2.3,45.7,0,42.9,0
+            z M29.7,41.1c-0.9,0.2-1.2-0.4-1.2-0.9c0-0.6,0-3.5,0-5.9c0-1.7-0.6-2.7-1.2-3.3c4-0.4,8.1-1,8.1-7.8c0-2-0.7-2.9-1.8-4.2
+            c0.2-0.5,0.8-2.4-0.2-4.8c-1.5-0.5-4.9,1.9-4.9,1.9c-1.4-0.4-2.9-0.6-4.5-0.6s-3,0.2-4.5,0.6c0,0-3.4-2.4-4.9-1.9
+            c-1,2.5-0.4,4.4-0.2,4.8c-1.1,1.3-1.7,2.2-1.7,4.2c0,6.8,4,7.4,8,7.8c-0.5,0.5-1,1.3-1.1,2.4c-1,0.5-3.6,1.3-5.2-1.5
+            c-1-1.7-2.7-1.8-2.7-1.8c-1.7,0-0.1,1.1-0.1,1.1c1.2,0.5,2,2.6,2,2.6c1,3.2,6,2.1,6,2.1c0,1.5,0,3.9,0,4.3c0,0.5-0.3,1-1.2,0.9
+            c-7.1-2.4-12-9.1-12-17c0-9.8,7.5-17.3,17.4-17.3s17.8,7.5,17.8,17.3C41.6,32,36.8,38.8,29.7,41.1z M19.2,34.6c-0.2,0-0.4,0-0.4-0.2
+            c0-0.2,0.1-0.3,0.3-0.3c0.2,0,0.4,0.1,0.4,0.2C19.6,34.4,19.4,34.5,19.2,34.6L19.2,34.6z M18.2,34.5c0,0.1-0.2,0.3-0.4,0.3
+            c-0.2,0-0.4-0.1-0.4-0.3c0-0.1,0.2-0.3,0.4-0.3C18,34.2,18.2,34.3,18.2,34.5z M16.7,34.4c0,0.1-0.3,0.2-0.4,0.1
+            c-0.2,0-0.3-0.2-0.3-0.3c0-0.1,0.3-0.2,0.4-0.2C16.6,34,16.8,34.2,16.7,34.4L16.7,34.4z M15.4,33.8c-0.1,0.1-0.3,0.1-0.5-0.1
+            c-0.2-0.1-0.2-0.3-0.1-0.4c0.1-0.1,0.3-0.1,0.5,0.1C15.4,33.5,15.5,33.7,15.4,33.8z M14.4,32.8c-0.1,0.1-0.3,0-0.4-0.2
+            s-0.1-0.3,0-0.4c0.1-0.1,0.3,0,0.4,0.1C14.5,32.5,14.5,32.7,14.4,32.8z M13.7,31.8c-0.1,0.1-0.3,0-0.4-0.1c-0.1-0.1-0.1-0.3,0-0.4
+            c0.1-0.1,0.3,0,0.4,0.1C13.8,31.5,13.8,31.7,13.7,31.8z M13,31c0,0.1-0.2,0.1-0.3,0c-0.1-0.1-0.2-0.2-0.2-0.3c0-0.1,0.2-0.1,0.3,0
+            C13,30.8,13,30.9,13,31z" />
+        </svg>
+      </a>
+      <a href="https://open.kakao.com/o/s1uObjpd" target="_blank">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 136.1 136.1" style="enable-background:new 0 0 136.1 136.1;" xml:space="preserve">
+          <g class="svg__wrap">
+            <path class="st0"
+              d="M114.3,0H21.8C9.7,0,0,9.7,0,21.8v92.5c0,12,9.7,21.8,21.8,21.8h92.5c12,0,21.8-9.7,21.8-21.8V21.8
+                    C136.1,9.7,126.3,0,114.3,0z M68,102c-2.9,0-8.5-0.6-8.5-0.6l-20.9,13.8c-0.8,0.5-1.8-0.2-1.7-1.1l3.5-18.8
+                    c-12.8-7-21.1-18.6-21.1-31.9C19.4,42,41.2,24.7,68,24.7c26.9,0,48.6,17.3,48.6,38.7C116.7,84.7,94.9,102,68,102z" />
+            <path class="st0" d="M50.7,55c0-1.3-1.1-2.4-2.4-2.4h-14c-1.3,0-2.4,1.1-2.4,2.4c0,1.3,1.1,2.4,2.4,2.4h4.6v16.9
+                    c0,0.6,0.2,1.2,0.7,1.7c0.4,0.4,1,0.7,1.6,0.7h0.5c0.6,0,1.2-0.2,1.6-0.7c0.4-0.4,0.7-1,0.7-1.7V57.4h4.3
+                    C49.7,57.4,50.7,56.3,50.7,55z" />
+            <path class="st0" d="M81.1,72.1h-6.5V54.9c0-1.4-1.2-2.6-2.6-2.6c-1.4,0-2.6,1.2-2.6,2.6v18.6c0,0.1,0,0.7,0,0.8
+                    c0,1.2,1,2.2,2.2,2.2h9.5c1.2,0,2.2-1,2.2-2.2C83.3,73.1,82.3,72.1,81.1,72.1z" />
+            <path class="st0" d="M94.8,63.3l6.6-6.6c0.9-0.9,0.9-2.3,0-3.2c-0.9-0.9-2.3-0.9-3.2,0L90,61.7v-6.8c0-1.4-1.2-2.6-2.6-2.6
+                    c-1.4,0-2.6,1.2-2.6,2.6v19.2c0,1.4,1.2,2.6,2.6,2.6c1.4,0,2.6-1.2,2.6-2.6v-5.9l1.5-1.5l6.9,9.1c0.8,1,2.2,1.2,3.2,0.5
+                    c1-0.8,1.2-2.2,0.5-3.3L94.8,63.3z" />
+            <path class="st0" d="M60.9,54.3C60.9,54.3,60.9,54.3,60.9,54.3c-0.5-1.2-1.8-2-3.3-2c-0.4,0-0.8,0.1-1.1,0.2
+                    c-0.3,0.1-0.7,0.2-1,0.4c-0.3,0.2-0.5,0.4-0.8,0.7c-0.1,0.2-0.3,0.4-0.4,0.6c-0.1,0.2-0.4,1.2-0.5,1.5c0,0.1-0.1,0.2-0.1,0.3
+                    c0,0.1-0.1,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.2,0.4c-0.1,0.2-0.1,0.3-0.2,0.5c-0.1,0.2-0.1,0.4-0.2,0.5c-0.1,0.2-0.1,0.4-0.2,0.6
+                    c-0.1,0.2-0.2,0.4-0.2,0.6c-0.1,0.2-0.2,0.4-0.2,0.7c-0.1,0.2-0.2,0.5-0.3,0.7c-0.1,0.2-0.2,0.5-0.3,0.7c-0.1,0.2-0.2,0.5-0.3,0.7
+                    c-0.1,0.3-0.2,0.5-0.3,0.8c-0.1,0.3-0.2,0.5-0.3,0.8c-0.1,0.3-0.2,0.5-0.3,0.8c-0.1,0.3-0.2,0.5-0.3,0.8c-0.1,0.3-0.2,0.5-0.3,0.8
+                    c-0.1,0.3-0.2,0.5-0.3,0.8c-0.1,0.2-0.2,0.5-0.3,0.7c-0.1,0.2-0.2,0.5-0.3,0.7c-0.1,0.2-0.2,0.5-0.3,0.7c-0.1,0.2-0.2,0.5-0.3,0.7
+                    c-0.1,0.2-0.2,0.4-0.2,0.6c-0.1,0.2-0.2,0.4-0.2,0.6c-0.1,0.2-0.1,0.4-0.2,0.6c-0.1,0.2-0.1,0.3-0.2,0.5c-0.1,0.2-0.1,0.3-0.2,0.5
+                    c-0.1,0.1-0.1,0.3-0.2,0.4c0,0.1-0.1,0.2-0.1,0.4c0,0.1-0.1,0.2-0.1,0.3c0,0.1-0.1,0.2-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0,0,0,0,0.1
+                    c-0.4,1.2,0.2,2.5,1.4,3c1.2,0.4,2.5-0.2,3-1.4l1.2-3.4h9.6l1.2,3.4c0.4,1.2,1.7,1.9,3,1.4c1.2-0.4,1.8-1.8,1.4-3L60.9,54.3z
+                    M54.3,67.3l3.2-9.2c0,0,0.1,0,0.1,0l3.2,9.2H54.3z" />
+          </g>
+        </svg>
+      </a>
+    </div>
+    <p class="contact__rights">
+      2021 Yamba - All rights reserved
+    </p>
+  </section>
+
+  <!-- Arrow up -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+
+</html>
