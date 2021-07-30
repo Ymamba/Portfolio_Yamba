@@ -2,16 +2,17 @@
 :root {
   /* Color */
   --color-white: #ffffff;
+  --color-font: #999186;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #ffb0cc;
+  --color-pink: #999186;
   --color-dark-pink: #ff6f6b;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
-  --color-yellow: #fff7d1;
-  --color-orange: #feb546;
+  --color-yellow: #e9ddc5;
+  --color-orange: #fffce9;
   --color-black: #000000;
 
   /* Font size */
@@ -147,6 +148,7 @@ p {
   color: var(--color-white);
   cursor: pointer;
   border-radius: var(--size-border-radius);
+  transition: all var(--animation-duration) ease-in;
 }
 
 .navbar__menu__item.active {
@@ -155,7 +157,8 @@ p {
 
 .navbar__menu__item:hover {
   border-color: var(--color-white);
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-white);
+  color: var(--color-font);
 }
 
 .navbar__toggle-btn {
@@ -169,7 +172,7 @@ p {
 
 /* Home */
 #home {
-  background: url('imgs/home-background.png') center/cover no-repeat;
+  background: url("imgs/home-background2.jpg") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -184,22 +187,23 @@ p {
 
 .home__title,
 .home__description {
-  color: var(--color-white);
+  color: var(--color-font);
 }
 
 .home__contact {
-  color: var(--color-white);
+  color: var(--color-font);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
   padding: 8px 12px;
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-font);
   border-radius: var(--size-border-radius);
   transition: all var(--animation-duration) ease-in;
 }
 
 .home__contact:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-font);
+  color: var(--color-white);
 }
 /* Section common */
 .section {
@@ -360,7 +364,7 @@ p {
 .category__count {
   background-color: var(--color-orange);
   border-radius: 50%;
-  color: var(--color-white);
+  color: var(--color-font);
   width: 24px;
   height: 24px;
   line-height: 24px;
@@ -431,7 +435,7 @@ p {
 }
 
 .project__description h3:after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   left: 50%;
@@ -628,7 +632,8 @@ p {
     width: 100%;
   }
 
-  .category__btn.selected .category__count, .category__btn:hover .category__count {
+  .category__btn.selected .category__count,
+  .category__btn:hover .category__count {
     top: 4px;
   }
 
